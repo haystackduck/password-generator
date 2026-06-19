@@ -8,7 +8,8 @@ A command-line password generator built with python.
 
 # Installation
 1. Clone the resitory
-2. Run the main.py file
+2. Install the wonderwords module 
+3. Run the main.py file
 
 # What I learned
 - I learned more about 3 new modules (string, secret, and wonderwords)
