@@ -1,6 +1,6 @@
 import secrets
 import string
-from wonderwords import RandomWord
+from wonderwords import RandomWord as r
 
 def calculate_password(length, type):
     characters = ''
@@ -13,7 +13,6 @@ def calculate_password(length, type):
     elif type == 4:
         characters = string.ascii_letters
     elif type == 5:
-        r = RandomWord()
         while True:
             phrase = ("-".join([r.word() for _ in range(length)]))
             if len(phrase) >= length:
@@ -31,7 +30,6 @@ def disclaimer():
 
 
 print("Welcome to Password Generator\n")
-
 print("Choose a password type:")
 print("1) Random")
 print("2) Memorable")
